@@ -12,10 +12,12 @@ class Counter extends Component {
   }
 
   render() {
+    const { color } = this.props
+    const { counterVal } = this.state
     return(
       <>
-        <h1>My Counter!</h1>
-        <p>Counter: {this.state.counterVal}</p>
+        <h1>{ color.toUpperCase() } Counter!</h1>
+        <p style={{background: color}}>Counter: { counterVal }</p>
         <button onClick={this.plus}>+</button>
         <button onClick={this.minus}>-</button>
       </>

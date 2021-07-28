@@ -6,7 +6,9 @@ class App extends Component {
   render() {
     return(
       <>
-      <Counter />
+      <Counter color="blue" />
+      <Counter color="red" />
+      <Counter color="yellow" />
       </>
     )
   }
